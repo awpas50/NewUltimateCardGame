@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NewUltimateCardGame/static/css/main.add4fe01.css",
-    "main.js": "/NewUltimateCardGame/static/js/main.7b1b3a7a.js",
+    "main.css": "/NewUltimateCardGame/static/css/main.4e97e8a9.css",
+    "main.js": "/NewUltimateCardGame/static/js/main.700b3b0e.js",
     "static/js/787.38f16daf.chunk.js": "/NewUltimateCardGame/static/js/787.38f16daf.chunk.js",
     "static/media/wood2.jpg": "/NewUltimateCardGame/static/media/wood2.6bf91054ca20c52bffae.jpg",
     "static/media/W001.png": "/NewUltimateCardGame/static/media/W001.348349a39e62ddf67092.png",
@@ -14,12 +14,12 @@
     "static/media/I002.png": "/NewUltimateCardGame/static/media/I002.9f95e56ad7c185a4db08.png",
     "static/media/I007.png": "/NewUltimateCardGame/static/media/I007.9dae8c98b7ba7cc29a6b.png",
     "index.html": "/NewUltimateCardGame/index.html",
-    "main.add4fe01.css.map": "/NewUltimateCardGame/static/css/main.add4fe01.css.map",
-    "main.7b1b3a7a.js.map": "/NewUltimateCardGame/static/js/main.7b1b3a7a.js.map",
+    "main.4e97e8a9.css.map": "/NewUltimateCardGame/static/css/main.4e97e8a9.css.map",
+    "main.700b3b0e.js.map": "/NewUltimateCardGame/static/js/main.700b3b0e.js.map",
     "787.38f16daf.chunk.js.map": "/NewUltimateCardGame/static/js/787.38f16daf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.add4fe01.css",
-    "static/js/main.7b1b3a7a.js"
+    "static/css/main.4e97e8a9.css",
+    "static/js/main.700b3b0e.js"
   ]
 }
