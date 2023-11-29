@@ -1,54 +1,52 @@
 import React, { useState, useEffect } from 'react';
 import Draggable from 'react-draggable';
 
-const ICard = ({ x, y }) => {
+const ICard = ({ x, y, imageSrc }) => {
   const [currentPosition, setCurrentPosition] = useState({ x: 0, y: 0 });
-  const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
-    setCurrentPosition({ x, y });
+    // Set initial position only when x or y are non-zero
+    if (x !== 0 || y !== 0) {
+      setCurrentPosition({ x, y });
+    }
   }, [x, y]);
 
   const handleDragStart = () => {
-    setIsDragging(true);
+    // No need to update currentPosition here
   };
 
-  const handleDrag = (_, data) => {
-    //setCurrentPosition({ x: data.x, y: data.y });
-  };
+  const handleDragStop = (e, data) => {
+    const dropX = data.x;
+    const dropY = data.y;
 
-  const handleDragStop = () => {
-    setIsDragging(false);
-    animateToPosition({ x, y });
-  };
+    // Define the drop spots
+    const dropSpots = [
+      { x: 100, y: 100 },
+      { x: 300, y: 300 },
+    ];
 
-  const animateToPosition = ({ x: targetX, y: targetY }) => {
-    const animationTime = 0.5; // Animation duration in seconds
-    const intervalTime = 20; // Interval time for animation frames
-    const framesCount = animationTime * 1000 / intervalTime;
-    const xStep = (targetX - currentPosition.x) / framesCount;
-    const yStep = (targetY - currentPosition.y) / framesCount;
+    // Check if the card touches any of the drop spots
+    const isCardInDropSpot = dropSpots.some((spot) => {
+      return (
+        dropX >= spot.x &&
+        dropX <= spot.x + 100 /* Width of the card */ &&
+        dropY >= spot.y &&
+        dropY <= spot.y + 128 /* Height of the card */
+      );
+    });
 
-    let currentFrame = 0;
-    const animateTo = setInterval(() => {
-      currentFrame++;
-      setCurrentPosition(prevPosition => ({
-        x: prevPosition.x + xStep,
-        y: prevPosition.y + yStep,
-      }));
-
-      if (currentFrame === framesCount) {
-        clearInterval(animateTo);
-        setCurrentPosition({ x: targetX, y: targetY }); // Set final position
-      }
-    }, intervalTime);
+    // Set the position based on drop spot or back to original spawn location
+    if (isCardInDropSpot) {
+      setCurrentPosition({ x: dropX, y: dropY });
+    } else {
+      setCurrentPosition({ x, y });
+    }
   };
 
   return (
     <div style={{ position: 'absolute', top: currentPosition.y, left: currentPosition.x }}>
       <Draggable
         position={{ x: currentPosition.x, y: currentPosition.y }}
-        onDrag={handleDrag}
         onStart={handleDragStart}
         onStop={handleDragStop}
       >
@@ -65,7 +63,7 @@ const ICard = ({ x, y }) => {
             alignItems: 'center',
           }}
         >
-          <span>A</span>
+          <img src={imageSrc} alt="Card" style={{ width: '100%', height: '100%' }} draggable="false" />
         </div>
       </Draggable>
     </div>

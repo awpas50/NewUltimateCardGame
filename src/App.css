@@ -27,6 +27,9 @@
     #e9bc7a 90%,
     #e9bc7a 100%
   );
+
+  background-image: url("wood2.jpg");
+  background-repeat: repeat;
   filter: saturate(75%); /* Desaturate the background */
   /* background-color: #282c34; */
   min-height: 100vh;
