@@ -8,8 +8,11 @@ function App() {
     <div className="App">
       <div className='App-header'>
         <CardGrid />
+
         <PlayerCardArea/>
-        <ICard/>
+        <ICard x={380} y={460} showICard={true}/>
+        <ICard x={400} y={460} showICard={true}/>
+
       </div>
     </div>
   );

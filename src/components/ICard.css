@@ -1,0 +1,7 @@
+.card-container {
+    transition: transform 0.3s ease; /* Apply transition to smoothly move the card */
+  }
+  
+  .card-container.dragging {
+    transition: none; /* Disable transition while dragging */
+  }

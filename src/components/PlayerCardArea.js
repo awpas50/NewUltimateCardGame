@@ -2,6 +2,9 @@ import React from 'react';
 
 const PlayerCardArea = () => {
   const cardSlotStyle = {
+
+    marginBottom: '20px',
+
     position: 'relative',
     width: '330px',
     height: '128px',
