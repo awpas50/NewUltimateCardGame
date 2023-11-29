@@ -1,8 +1,9 @@
 import React from 'react';
 
-const EmptyCardSlot = () => {
+const PlayerCardArea = () => {
   const cardSlotStyle = {
-    width: '100px',
+    position: 'relative',
+    width: '330px',
     height: '128px',
     border: '3px dotted #ccc',
     borderRadius: '10px', // Rounded edges
@@ -15,4 +16,4 @@ const EmptyCardSlot = () => {
   return <div style={cardSlotStyle}></div>;
 };
 
-export default EmptyCardSlot;
+export default PlayerCardArea;

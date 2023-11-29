@@ -14,7 +14,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f3e5ab; /* Fallback color */
+  background-image: linear-gradient(
+    45deg,
+    #d7a55a 0%,
+    #d7a55a 10%,
+    #c4903a 10%,
+    #c4903a 20%,
+    #b47e2d 20%,
+    #b47e2d 30%,
+    #c4903a 30%,
+    #c4903a 40%,
+    #b47e2d 40%,
+    #b47e2d 50%,
+    #c4903a 50%,
+    #c4903a 60%,
+    #b47e2d 60%,
+    #b47e2d 70%,
+    #c4903a 70%,
+    #c4903a 80%,
+    #d7a55a 80%,
+    #d7a55a 90%,
+    #e9bc7a 90%,
+    #e9bc7a 100%
+  );
+  filter: saturate(75%); /* Desaturate the background */
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
