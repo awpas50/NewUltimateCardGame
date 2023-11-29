@@ -4,7 +4,7 @@ const PlayerCardArea = () => {
   const cardSlotStyle = {
 
     marginBottom: '20px',
-
+    left: '20px',
     position: 'relative',
     width: '330px',
     height: '128px',

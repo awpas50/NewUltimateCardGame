@@ -4,6 +4,7 @@ import EmptyCardSlot from './EmptyCardSlot'; // Assuming EmptyCardSlot is in the
 const CardGrid = () => {
   const gridContainerStyle = {
     position: 'relative',
+    left: '20px',
     marginTop: '20px',
     display: 'grid',
     gridTemplateColumns: 'repeat(3, 100px)', // 3 columns each 100px wide
