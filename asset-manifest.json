@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NewUltimateCardGame/static/css/main.9eb0046f.css",
+    "main.js": "/NewUltimateCardGame/static/js/main.7aa7aa14.js",
+    "static/js/787.38f16daf.chunk.js": "/NewUltimateCardGame/static/js/787.38f16daf.chunk.js",
+    "index.html": "/NewUltimateCardGame/index.html",
+    "main.9eb0046f.css.map": "/NewUltimateCardGame/static/css/main.9eb0046f.css.map",
+    "main.7aa7aa14.js.map": "/NewUltimateCardGame/static/js/main.7aa7aa14.js.map",
+    "787.38f16daf.chunk.js.map": "/NewUltimateCardGame/static/js/787.38f16daf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9eb0046f.css",
+    "static/js/main.7aa7aa14.js"
+  ]
+}
